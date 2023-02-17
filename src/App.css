@@ -1,0 +1,131 @@
+.app {
+   position: absolute;
+   top: -4px;
+   left: 0px;
+   z-index: -1;
+   min-width: 340px;
+   width: 100%;
+   height: 100px;
+   background-image: url('https://i.pinimg.com/564x/4c/1c/09/4c1c09fe6125f7fc16e73290024b3096.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+}
+.app__form {
+   width: 100%;
+   height:100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #0003;
+   backdrop-filter: blur(2px);
+   transform: scale(0);
+   transition: transform 200ms ease;
+   z-index: 1;
+   
+}
+.app__form-visible {
+  transform:scale(1);
+}
+.app__text {
+ font-family: impact;
+ display: flex;
+ margin-top: 0;
+ margin-left: 0;
+ font-size: 90px;
+ background: transparent 
+ url('https://i.pinimg.com/564x/67/6e/0d/676e0dc7cb5ceba126382874379a6c01.jpg');
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ animation: filling 4s ease forwards ;
+}
+@keyframes filling {
+   from {
+      background-position: center 425%;
+   }
+   to {
+      background-position: center 750%;
+   }
+}
+.form { 
+  padding: 1.2em;
+  width: 100%;
+  max-width: 350px;
+  background-color: rgb(246, 250, 246);
+  height: max-content;
+  border-radius:1em;
+  word-spacing: 0.5em;
+}
+.form__tittle {
+  font-size:1.5em;
+  margin-bottom:0.6em;
+}
+.form__x {
+  position: relative;
+  right:-8.5em;
+  top: -1.8em;
+  font-size: 1.3em;
+  color: rgba(245, 7, 7, 0.666);
+  cursor: pointer;
+  transition: transform  100ms ease;
+}
+.form__x:hover {
+ transform: scale(1.2);
+}
+.form__item {
+   display: flex; 
+   flex-direction: column;
+   gap:0.3em;
+   margin-bottom:0.8em;
+}
+.form__label {
+   color:  rgba(69, 68, 68, 0.444); 
+   padding-left: 1em;
+   text-transform: capitalize;
+}
+.form__input {
+   padding:0.4em 0.8em;
+   border-radius: 0.5em;
+   color: rgba(105, 104, 104, 0.616);
+}
+.form__btn  {
+   width:100%;
+   padding:0.8em;
+   background: rgb(72,178,212);
+   background: radial-gradient(circle,
+ rgba(72,178,212,1) 0%,
+ rgba(148,240,183,1) 100%);
+   border-radius: 0.5em;
+   color: rgb(6, 2, 2);
+   box-shadow: 3px 3px 3px rgba(249, 204, 44, 0.364);
+   cursor: pointer;
+}
+.app__btn-form{
+   width: 100px;
+   padding:0.6em;
+   background: rgb(72,178,212);
+   background: radial-gradient(circle, 
+  rgba(72,178,212,1) 0%,
+  rgba(148,240,183,1) 100%);
+   border-radius: 0.5em;
+   color: rgb(6, 1, 11);
+   box-shadow: 4px 4px 0 rgba(237, 187, 8, 0.364);
+   cursor: pointer;
+   position: absolute;
+   right:3em;
+   top: 2em; 
+   word-spacing: 0.2em; 
+}
+.app__footer {
+   background-image: url('https://i.pinimg.com/564x/4c/1c/09/4c1c09fe6125f7fc16e73290024b3096.jpg');
+   position: absolute;
+   top: - 0;
+   bottom: '';
+   width: 100%;
+   height:20%;
+   z-index: 1;
+   text-align: center;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Merriweather:ital,wght@0,400;1,400;1,700&family=PT+Serif:ital,wght@0,400;1,400;1,700&family=Shippori+Mincho:wght@400;500;600&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,600&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&family=Xanh+Mono:ital@1&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+h1,h2,h3,h4,p,ul,li{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    list-style: none;
+    border:none;
+    
+}
+button{
+    border: none;
+    font-family: inherit;
+}
+input{
+    outline: 0;
+    font-family: inherit;
+    border: none;
+    background-color: rgba(138, 190, 163, 0.191);
+}
+body::-webkit-scrollbar {
+    width: 0.6em;
+    background-color: #6799a911;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: rgb(72,178,212);
+   background: radial-gradient(circle, 
+  rgba(72,178,212,1) 0%,
+  rgba(148,240,183,1) 100%);
+    border-radius: 6rem;
+    lighting-color: black;
+}
